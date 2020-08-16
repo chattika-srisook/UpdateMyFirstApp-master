@@ -44,10 +44,7 @@ class MainActivity : AppCompatActivity() {
 
         NavigationUI.setupWithNavController(binding.navView, navController)
 
-        val recyclerView = findViewById<RecyclerView>(R.id.recyclerview)
-        val adapter = WordListAdapter(this)
-        recyclerView.adapter = adapter
-        recyclerView.layoutManager = LinearLayoutManager(this)
+
 
     }
 

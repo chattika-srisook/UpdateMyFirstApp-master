@@ -9,7 +9,11 @@
         android:id="@+id/titleFragment"
         android:name="com.example.android.navigation.TitleFragment"
         android:label="Home"
-        tools:layout="@layout/fragment_title" />
+        tools:layout="@layout/fragment_title" >
+        <action
+            android:id="@+id/action_titleFragment_to_mainActivity"
+            app:destination="@id/mainActivity" />
+    </fragment>
     <fragment
         android:id="@+id/rulesFragment"
         android:name="com.example.android.navigation.RulesFragment"
@@ -20,4 +24,9 @@
         android:name="com.example.android.navigation.AboutFragment"
         android:label="AboutMe"
         tools:layout="@layout/fragment_about" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.android.navigation.MainActivity"
+        android:label="contact"
+        tools:layout="@layout/contact" />
 </navigation>
